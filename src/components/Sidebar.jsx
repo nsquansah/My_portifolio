@@ -10,7 +10,7 @@ function Sidebar() {
         <div>
           <h1 className={styles.symbol}>N</h1>
           <h2 className={styles.name}>Nina</h2>
-          <h3 className={styles.title}>Web Developer</h3>
+          <h3 className={styles.mytitle}>Web Developer</h3>
         </div>
       </div>
       <ul className={styles.sidebarlist}>
@@ -23,7 +23,7 @@ function Sidebar() {
               window.location.pathname = val.path;
             }}
           >
-            <div id="title">{val.title}</div>
+            <div className={styles.title}>{val.title}</div>
           </li>
         ))}
       </ul>
