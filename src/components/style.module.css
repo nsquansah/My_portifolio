@@ -1,0 +1,41 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(24,24,24,255);
+  }
+
+  .sidebarheader {
+    height: 200px;
+    width: 100%;
+    background-color:rgba(0,0,0,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .symbol {
+    height: 70px;
+    width: 100px;
+    background-color:wheat;
+    font-size: 72px;
+    background: linear-gradient(rgba(6,249,214,255), rgba(252,32,85,255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.name{
+    color: rgba(235,234,236,255);
+    font-size: 1em;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.title{
+    color: #4d5154;
+    font-size: 0.8em;
+    
+}
