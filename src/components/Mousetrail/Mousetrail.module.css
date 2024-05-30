@@ -1,0 +1,12 @@
+/* src/components/Mousetrail/Mousetrail.module.css */
+.trail {
+    position: absolute;
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition:  background 0.01s;
+    transition-duration: 10s;
+  }
+  
