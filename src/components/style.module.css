@@ -51,7 +51,7 @@
 }
 
 .sidebarlist .row {
-    width: 98%;
+    width: 99%;
     height: 50px;
     border: 1px solid black;
     list-style-type: none;
@@ -108,10 +108,3 @@
     left: 2px;
     top: 50px;
 }
-
-.content {
-    
-    flex: 1; /* Expand to fill remaining space */
-    padding: 20px;
-    background-color: #fff;
-  }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar'; // Ensure Sidebar is in the correct path
 import Mousetrail from './components/Mousetrail/Mousetrail'; // Ensure Mousetrail is in the correct path
-import MainContent from './components/MainContent/MainContent';
+import Maincontent from './components/MainContent/Maincontent';
 import './App.css';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     const handleMouseMove = (e) => {
       setMouseIdle(false);
       const newTrail = [...trail, { x: e.clientX, y: e.clientY }];
-      if (newTrail.length > 20) newTrail.shift(); // Keep only the latest 10 positions
+      if (newTrail.length > 5) newTrail.shift(); // Keep only the latest 10 positions
       setTrail(newTrail);
     };
 
@@ -39,10 +39,11 @@ function App() {
   return (
     <div className='App'>
       <Sidebar />
+      <Maincontent />
       {trail.map((pos, index) => (
         <Mousetrail key={index} x={pos.x} y={pos.y} />
+
       ))}
-      <MainContent />
     </div>
     
   );

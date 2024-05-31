@@ -1,8 +1,8 @@
 /* src/components/Mousetrail/Mousetrail.module.css */
 .trail {
     position: absolute;
-    width: 30px; /* Adjust width as needed */
-    height: 30px; /* Adjust height as needed */
+    width: 5px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
