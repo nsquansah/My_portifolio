@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import Sidebar from './components/Sidebar'; // Ensure Sidebar is in the correct path
-import Mousetrail from './components/Mousetrail/Mousetrail'; // Ensure Mousetrail is in the correct path
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Mousetrail from './components/Mousetrail/Mousetrail';
 import Maincontent from './components/MainContent/Maincontent';
+import CvPage from './pages/CvPage/index.jsx';
 import './App.css';
+import AboutPage from './pages/AboutPage/index.jsx';
+import Blog from './pages/Blog/index.jsx';
+// import Projects from './pages/Projects/index.jsx';
+import Contacts from './pages/Contact/index.jsx';
+import MySkills from './pages/MySkill/index.jsx';
+
 
 function App() {
   const [trail, setTrail] = useState([]);
@@ -11,9 +19,11 @@ function App() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMouseIdle(false);
-      const newTrail = [...trail, { x: e.clientX, y: e.clientY }];
-      if (newTrail.length > 5) newTrail.shift(); // Keep only the latest 10 positions
-      setTrail(newTrail);
+      setTrail(prevTrail => {
+        const newTrail = [...prevTrail, { x: e.clientX, y: e.clientY }];
+        if (newTrail.length > 5) newTrail.shift(); // Keep only the latest 10 positions
+        return newTrail;
+      });
     };
 
     const handleMouseIdle = () => {
@@ -21,13 +31,13 @@ function App() {
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-    const idleTimeout = setTimeout(handleMouseIdle, 500);
+    const idleTimeout = setTimeout(handleMouseIdle, 5);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       clearTimeout(idleTimeout);
     };
-  }, [trail]);
+  }, []);
 
   useEffect(() => {
     if (mouseIdle) {
@@ -37,15 +47,25 @@ function App() {
   }, [mouseIdle]);
 
   return (
-    <div className='App'>
-      <Sidebar />
-      <Maincontent />
-      {trail.map((pos, index) => (
-        <Mousetrail key={index} x={pos.x} y={pos.y} />
+    <Router>
+      <div className='App'>
+        <Sidebar />
+        {trail.map((pos, index) => (
+          <Mousetrail key={index} x={pos.x} y={pos.y} />
+        ))}
+        <Routes>
+          <Route path='/' element={<Maincontent />} />
+          <Route path='/resume' element={<CvPage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='*' element={<h1>Not Found</h1>} />
+          <Route path='/blog' element={<Blog/>} />
+          {/* <Route path='/projects' element={<Projects/>} /> */}
+          <Route path='/contact' element={<Contacts/>} />
+          <Route path='/skills' element={<MySkills/>} />
 
-      ))}
-    </div>
-    
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

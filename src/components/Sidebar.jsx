@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../App.css';
 import styles from './style.module.css';
 import { SidebarData } from './SidebarData';
-import facebookicon from '../assets/images/facebookicon.jpg';
-import instaicon from '../assets/images/instaicon.jpg';
-// import whatsappicon from '../assets/images/whatsappicon.jpg';
-import github from '../assets/images/github.svg';
+
+import linkedln from '../assets/images/linkedin1.svg';
+import githubicon from '../assets/images/github.svg';
+
 function Sidebar() {
+  const location = useLocation();
+
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebarheader}>
@@ -20,37 +23,23 @@ function Sidebar() {
         {SidebarData.map((val, key) => (
           <li
             key={key}
-            className={styles.row}
-            id={window.location.pathname === val.path ? "active" : ""}
-            onClick={() => {
-              window.location.pathname = val.path;
-            }}
+            className={`${styles.row} ${location.pathname === val.path ? styles.active : ''}`}
           >
-          <div className={styles.title}>
-              {val.title === 'Blog' && <span className={styles.new}>{val.title}</span>}
-              
-              {val.title !== 'Blog' && <span>{val.title}</span>}
-              
-            </div>
+            <Link to={val.path} className={styles.title}>
+              {val.title === 'Blog' ? <span className={styles.new}>{val.title}</span> : <span>{val.title}</span>}
+            </Link>
           </li>
         ))}
       </ul>
       <div className={styles.socials}>
-        <a href="https://www.facebook.com/nina.rosenwald.3" target="_blank" rel="noreferrer">
-          <img src={facebookicon} alt="facebookicon" className={styles.facebookicon} />
+        <a href="https://https://www.linkedin.com/in/nina-spio-quansah-b74268167/" target="_blank" rel="noreferrer">
+          <img src={linkedln} alt="linkedinicon" className={styles.linkedin} />
         </a>
-        <a href="https://www.instagram.com/ninaspioquansah/" target="_blank" rel="noreferrer">
-          <img src={instaicon} alt="instagramicon" className={styles.instaicon} />
-          </a>
-         
         <a href="https://www.github.com/nsquansah/">
-        <img src={github} alt='github' className={styles.github} />
+          <img src={githubicon} alt='github' className={styles.github} />
         </a>
-        
-        </div>
-        
+      </div>
     </div>
-    
   );
 }
 
