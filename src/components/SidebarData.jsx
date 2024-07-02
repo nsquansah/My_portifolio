@@ -1,10 +1,14 @@
-import React from "react";
+
 
 export const SidebarData = [
+    {
+        title: 'Home',
+        path: '/',  
+    },
 
     {
-        title: "About",
-        path: "/about",
+        title: 'About Me',
+        path: '/about',
         
     },
     {
@@ -31,4 +35,4 @@ export const SidebarData = [
         title: "Blog",
         path: "/blog",
     },
-    ];
+    ]; 

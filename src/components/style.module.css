@@ -7,6 +7,8 @@
     background-color:rgba(24,24,24,255);
   }
 
+
+
   .sidebarheader {
     height: 200px;
     width: 100%;
@@ -68,12 +70,13 @@
 }
 
 .title{
-    color: #514c57;
+    color:#4d5154;
     font-size: 1em;
     position: relative;
     left: -20px;
     top: 10px;
     font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 .new{
@@ -98,7 +101,16 @@
 .github{
     position: relative;
     font-size: 0.5em;
-    left: 120px;
+    left: 100px;
+    top: 12px;
+    background-color: white;
+    width: 50px;
+}
+
+.linkedin{
+    position: relative;
+    /* font-size: 0.5em; */
+    left: 50px;
     top: 12px;
     background-color: white;
 }
@@ -107,4 +119,8 @@
     position: relative;
     left: 2px;
     top: 50px;
+}
+
+.sidebar #active{
+    background-color: rgba(155, 42, 42, 0.5);
 }
