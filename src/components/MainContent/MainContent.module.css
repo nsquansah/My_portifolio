@@ -61,3 +61,25 @@
     color: white;
   }
   
+  @media screen and (max-width: 600px) {
+    .maincontent {
+      margin-left: 0; /* Adjust margin as needed */
+      width: 100%;
+      height: fit-content;
+      font-size: 1rem;
+      position: relative;
+      left:15rem;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 12px;
+      position: relative;
+      top: 2rem;
+    }
+
+    .sign1 {
+      font-size: 1em;
+      margin-top: 6%;
+    }
+  }

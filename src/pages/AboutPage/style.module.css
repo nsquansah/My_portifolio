@@ -1,0 +1,52 @@
+
+
+.AboutPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+        
+}
+
+.first{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 20%;
+    top: 10%;
+    width: 80%;
+}
+
+.second{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 20%;
+    top: 25%;
+    width: 70%;
+}
+
+.third{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 20%;
+    top: 40%;
+    width: 70%;
+}
+
+.fourth{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 20%;
+    top: 55%;
+    width: 70%;
+}
