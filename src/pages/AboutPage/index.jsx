@@ -1,14 +1,14 @@
-// src/pages/AboutPage/index.jsx
 import React from 'react';
-import Style from './style.module.css';
+import styles from './style.module.css';
+import secondImage from '../../assets/images/fullpic.jpg';
+import CardSlider from '../../components/CardSlider';
 
 export const AboutPage = () => {
   return (
-    <div className={Style.AboutPage}>
-    
-
-      </div>
+    <div className={styles.container}>
+      {/* <CardSlider /> */}
+    </div>
   );
-};
+}
 
 export default AboutPage;
