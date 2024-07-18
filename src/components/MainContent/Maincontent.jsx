@@ -16,8 +16,11 @@ function MainContent() {
           I'm <span className={styles.Nstyle}>N</span>ina,
         </h2>
         <h2 className={styles.submain}>
-          a web developer.    
-          <p className={styles.sign1}>
+          a web developer  
+          <p className={styles.sign1}>  
+          <p className={styles.addition}>
+           <i> and a Social Entrepreneur.</i>
+          </p>
           &lt;/p&gt;
         </p>
         </h2>
