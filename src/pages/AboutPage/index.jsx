@@ -1,13 +1,14 @@
-// src/pages/AboutPage/index.jsx
 import React from 'react';
+import styles from './style.module.css';
+import secondImage from '../../assets/images/fullpic.jpg';
+import CardSlider from '../../components/CardSlider';
 
 export const AboutPage = () => {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>This is the About pagetttttttttttttttttttttttttttttttttttttttttttttttttt.</p>
+    <div className={styles.container}>
+      {/* <CardSlider /> */}
     </div>
   );
-};
+}
 
 export default AboutPage;

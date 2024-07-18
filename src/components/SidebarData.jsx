@@ -35,4 +35,9 @@ export const SidebarData = [
         title: "Blog",
         path: "/blog",
     },
+
+    {
+        title: "Gallery",
+        path: "/gallery",
+    }
     ]; 

@@ -10,6 +10,7 @@ import Blog from './pages/Blog/index.jsx';
 // import Projects from './pages/Projects/index.jsx';
 import Contacts from './pages/Contact/index.jsx';
 import MySkills from './pages/MySkill/index.jsx';
+import Gallery from './pages/Gallery/index.jsx';
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
           {/* <Route path='/projects' element={<Projects/>} /> */}
           <Route path='/contact' element={<Contacts/>} />
           <Route path='/skills' element={<MySkills/>} />
+          <Route path='/gallery' element={<Gallery/>} />
 
         </Routes>
       </div>
