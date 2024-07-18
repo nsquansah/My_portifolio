@@ -6,8 +6,10 @@
     margin-left: 300px; /* Adjust margin as needed */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 72px;
-    position: fixed;
+    position: relative;
     height: 80%;
+    bottom: 20%;
+
     
   }
   
