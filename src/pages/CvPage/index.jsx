@@ -4,7 +4,7 @@ import styles from './style.module.css';
 
 import React from 'react'
 
-const CvPage = () => {
+export const CvPage = () => {
   return (
     <div className={styles.CvPage}>CvPage</div>
   )

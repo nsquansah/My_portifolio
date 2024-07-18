@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Mousetrail from './components/Mousetrail/Mousetrail';
 import Maincontent from './components/MainContent/Maincontent';
