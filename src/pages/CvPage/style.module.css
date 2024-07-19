@@ -1,15 +1,503 @@
-
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    /* overflow: hidden; */
+    ;
+}
+ 
 .CvPage{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: flex-start;
+    align-items: left;
+    justify-content: left;
+    height: 400vh;
     background-color: rgba(245,244,252,255);
-    border: 2px solid red;
-    
+    width: 75%;
+    margin-left: 15rem;
+    padding: 5rem;
+
     
 }
+
+.title{
+    font-size: 4rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgba(93,72,300,255);
+    margin-top: 50px;
+
+}
+
+.subtitle{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #525760;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.subtitle2{
+color: #817b8a;
+width: 50%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* font-style: italic; */
+font-weight: 800;
+font-size: 1.2rem;
+margin-top: 3rem;
+margin-bottom: 2rem;
+word-spacing: 5px;
+
+}
+
+.line{
+    width: 50%;
+    /* height: 0.1rem; */
+    background-color: #525760;
+    margin-top: 1rem;
+}
+ .subtitle3{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(93,72,300,255);
+    margin-top: 5rem;
+ }
+
+ .line2{
+    width: 15%;
+    height: 0.5rem;
+    background-color: #ccf381;
+    margin-top: -0.3rem;
+    color: #ccf381;
+    
+ }
+
+ .jobtitle{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(93,72,300,255);
+    margin-top: 1rem;
+ }
+
+ .jobparagraph{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #817b8a;
+    margin-top: 4rem;
+    width: 65%;
+ }  
+
+ .jobparagraph1{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #817b8a;
+    margin-top: 1rem;
+    width: 65%;
+ }
+
+ .subtitle4{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #817b8a;
+    margin-top: 1rem;
+ }
+
+ .date{
+    margin-left: 10rem;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .list{
+    margin-top: 1rem;
+ }
+
+ .date1{
+    margin-left: 10rem;
+    font-size: 1.2rem;
+ }
+
+ .date2{
+    margin-left: 11rem;
+    font-size: 1.2rem;
+ }
+
+ .date3{
+    margin-left: 15rem;
+    font-size: 1.2rem;
+ }
+
+    .date4{
+        margin-left: 12rem;
+        font-size: 1.2rem;
+    }
+
+    .date5{
+        margin-left: 3rem;
+        font-size: 1.2rem;
+    }
+
+
+    .date6{
+        margin-left: 10rem;
+        font-size: 1.2rem;
+    }
+
+    .leftpart{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        
+    }
+
+    .rightpart{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 0.2rem; */
+        margin-right: 5rem;
+        width: 20%;
+      
+        
+    }
+
+    .skills, .otherskills{ color: #817b8a;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .coretech{
+        color: blue;
+        margin-top: 3rem;
+    }
+    .line3{
+        width: 100%;
+        height: 0.5rem;
+        background-color: #ccf381;
+        margin-top: -0.3rem;
+        color: #ccf381;
+        margin-bottom: 1rem;
+    }
+    .skill {
+        margin-top: 1rem;
+    }
+    .otherskill{
+        margin-top: 2rem;
+        color: blue;
+    }
+    
+    .downloadicon{
+        /* margin-top: 0.5rem; */
+        margin-left: 0.5em;
+        width: 15%;
+        height: 1rem;
+
+    }
+
+  .download{
+    display: flex;
+    flex-direction: row;
+    /* align-items: right; */
+    color: rgb(25, 25, 28);
+    font-size: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+  }
+        /* responsiveness */
+        /* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .CvPage {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 2rem;
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+  
+    .subtitle2 {
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 100%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.2rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 0.9rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 0;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px to 768px) */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .CvPage {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 2rem;
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  
+    .subtitle2 {
+      font-size: 1.1rem;
+      width: 100%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 100%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.3rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 1rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 0;
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px to 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .CvPage {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 3rem;
+      width: 100%;
+      margin-left: 5rem;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+      font-size: 1.8rem;
+      width: 80%;
+    }
+  
+    .subtitle2 {
+      font-size: 1.2rem;
+      width: 80%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 80%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.4rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 80%;
+      font-size: 1rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 1rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 0;
+      font-size: 1.1rem;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* @media (min-width: 993px) {
+    .CvPage {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 4rem;
+      width: 80%;
+      margin-left: 10rem;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 4rem;
+    }
+  
+    .subtitle {
+      font-size: 2rem;
+      width: 50%;
+    }
+  
+    .subtitle2 {
+      font-size: 1.2rem;
+      width: 50%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 50%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.5rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 65%;
+      font-size: 1rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 50%;
+      margin-top: 2rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 1rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 5rem;
+      font-size: 1rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 10rem;
+      font-size: 1.2rem;
+    }
+  }
+   */
