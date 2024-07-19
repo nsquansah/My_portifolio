@@ -13,7 +13,7 @@
     justify-content: left;
     height: 400vh;
     background-color: rgba(245,244,252,255);
-    width: 80%;
+    width: 75%;
     margin-left: 15rem;
     padding: 5rem;
 
@@ -151,14 +151,16 @@ word-spacing: 5px;
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
+        
     }
 
     .rightpart{
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
+        /* margin-top: 0.2rem; */
         margin-right: 5rem;
-        width: 50%;
+        width: 20%;
+      
         
     }
 
@@ -169,7 +171,7 @@ word-spacing: 5px;
     }
     .coretech{
         color: blue;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
     .line3{
         width: 100%;
@@ -187,18 +189,315 @@ word-spacing: 5px;
         color: blue;
     }
     
+    .downloadicon{
+        /* margin-top: 0.5rem; */
+        margin-left: 0.5em;
+        width: 15%;
+        height: 1rem;
 
-    @media screen {max-width: 768px}{
-        .CvPage{
-            display: flex;
-            flex-direction: flex-start;
-            align-items: left;
-            justify-content: left;
-            height: 400vh;
-            background-color: rgba(245,244,252,255);
-            width: 80%;
-            margin-left: 15rem;
-            padding: 5rem;
-        }
-        
     }
+
+  .download{
+    display: flex;
+    flex-direction: row;
+    /* align-items: right; */
+    color: rgb(25, 25, 28);
+    font-size: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+  }
+        /* responsiveness */
+        /* Responsive CSS */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .CvPage {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 2rem;
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+  
+    .subtitle2 {
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 100%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.2rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 0.9rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 0;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px to 768px) */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .CvPage {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 2rem;
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  
+    .subtitle2 {
+      font-size: 1.1rem;
+      width: 100%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 100%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.3rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 1rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 0;
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px to 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .CvPage {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 3rem;
+      width: 100%;
+      margin-left: 5rem;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+      font-size: 1.8rem;
+      width: 80%;
+    }
+  
+    .subtitle2 {
+      font-size: 1.2rem;
+      width: 80%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 80%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.4rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 80%;
+      font-size: 1rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 1rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 0;
+      font-size: 1.1rem;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* @media (min-width: 993px) {
+    .CvPage {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 4rem;
+      width: 80%;
+      margin-left: 10rem;
+      height: auto;
+    }
+  
+    .title {
+      font-size: 4rem;
+    }
+  
+    .subtitle {
+      font-size: 2rem;
+      width: 50%;
+    }
+  
+    .subtitle2 {
+      font-size: 1.2rem;
+      width: 50%;
+    }
+  
+    .line,
+    .line2,
+    .line3 {
+      width: 50%;
+    }
+  
+    .subtitle3,
+    .jobtitle,
+    .subtitle4 {
+      font-size: 1.5rem;
+    }
+  
+    .jobparagraph,
+    .jobparagraph1 {
+      width: 65%;
+      font-size: 1rem;
+    }
+  
+    .leftpart,
+    .rightpart {
+      width: 50%;
+      margin-top: 2rem;
+    }
+  
+    .skills,
+    .otherskills {
+      font-size: 1rem;
+    }
+  
+    .coretech,
+    .otherskill {
+      margin-top: 5rem;
+      font-size: 1rem;
+    }
+  
+    .date,
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5,
+    .date6 {
+      margin-left: 10rem;
+      font-size: 1.2rem;
+    }
+  }
+   */

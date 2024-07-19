@@ -1,7 +1,7 @@
 // src/pages/CvPage/index.jsx
 
 import styles from './style.module.css';
-import DownloadButton from '../../components/DownloadButton';
+import downloadicon from '../../assets/images/downloadicon.png';
 
 import React from 'react'
 
@@ -126,10 +126,11 @@ export const CvPage = () => {
 
       </div>
       <div className={styles.rightpart}>
-        <DownloadButton />
+       <div className={styles.download}> <img src={downloadicon} alt="downloadicon" className={styles.downloadicon}/>
+        <h2 classNamde={styles.subtitle5}>Download</h2>
         {/* <h2 className={styles.subtitle5}>Ghana.</h2> */}
         {/* <hr className={styles.line3}/> */}
-
+      </div>
         
       <ul className={styles.skills}>
         <h2 className={styles.coretech}>Core Technologies</h2>
