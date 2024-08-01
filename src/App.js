@@ -11,6 +11,7 @@ import Blog from './pages/Blog/index.jsx';
 import Contacts from './pages/Contact/index.jsx';
 import MySkills from './pages/MySkill/index.jsx';
 import Gallery from './pages/Gallery/index.jsx';
+import Projects from './pages/Projects/index.jsx';
 
 
 function App() {
@@ -60,7 +61,7 @@ function App() {
           <Route path='/about' element={<AboutPage />} />
           <Route path='*' element={<h1>Not Found</h1>} />
           <Route path='/blog' element={<Blog/>} />
-          {/* <Route path='/projects' element={<Projects/>} /> */}
+          <Route path='/projects' element={<Projects/>} />
           <Route path='/contact' element={<Contacts/>} />
           <Route path='/skills' element={<MySkills/>} />
           <Route path='/gallery' element={<Gallery/>} />

@@ -24,7 +24,7 @@ export const CvPage = () => {
 
 {/* curent job */}
 <p className={styles. jobparagraph}>
-          <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Women Empowerment League</span> - Social Entrepreneur.<span className={styles.date1}> Ongoing</span></h3>
+          <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Women Empowerment League</span> - <span className={styles.role}>Social Entrepreneur.</span><span className={styles.date1}> Ongoing</span></h3>
         <ul>
           <li className={styles.list}>Conduct entrepreneurial skill training, financial literacy and soft skill training to girls and youth in rural
           or marginalized communities.</li>
@@ -41,7 +41,7 @@ export const CvPage = () => {
 {/* first job */}
 
         <p className={styles. jobparagraph}>
-          <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Topdog Africa</span> - Client Service Executive.<span className={styles.date2}>2021 - Present</span></h3>
+          <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Topdog Africa</span> - <span className={styles.role}>Client Service Executive.</span><span className={styles.date2}>2021 - Present</span></h3>
         <ul>
           <li className={styles.list}>Drove client satisfaction by producing
           high-quality products/services.</li>
@@ -57,7 +57,7 @@ export const CvPage = () => {
         </p>
 {/* second job */}
 <p className={styles. jobparagraph}>
-        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>PhytoScience Limited Ghana</span> - Customer care.<span className={styles.date3}>2021 - Present</span></h3>
+        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>PhytoScience Limited Ghana</span> - <span className={styles.role}>Customer care.</span><span className={styles.date3}>2021 - Present</span></h3>
         <ul>
           <li className={styles.list}>Drove client satisfaction by producing
           high-quality products/services.</li>
@@ -76,7 +76,7 @@ export const CvPage = () => {
 
 {/* third */}
 <p className={styles. jobparagraph}>
-        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Lead for Ghana</span> - Educator / community developer.<span className={styles.date4}>2017 - 2019</span></h3>
+        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Lead for Ghana</span> - <span className={styles.role}>Educator / community developer.</span><span className={styles.date4}>2017 - 2019</span></h3>
         <ul>
           <li className={styles.list}>Drove client satisfaction by producing
           high-quality products/services.</li>
@@ -95,7 +95,7 @@ export const CvPage = () => {
 
 {/* fourth */}
         <p className={styles. jobparagraph}>
-        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>MEDA GHANA</span> - Enumerator.<span className={styles.date5}> 2016</span></h3>
+        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>MEDA GHANA</span> - <span className={styles.role}>Enumerator.</span><span className={styles.date5}> 2016</span></h3>
         <ul>
           <li className={styles.list}>Conduct surveys or interviews following
           established protocols and guidelines.</li>
@@ -109,7 +109,7 @@ export const CvPage = () => {
 
 {/* third job */}
         <p className={styles. jobparagraph}>
-        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Dufie Memorial Hospital</span> - Administrator.<span className={styles.date6}>2015 - 2017</span></h3>
+        <h3 className={styles.subtitle4}><span className={styles.jobtitle}>Dufie Memorial Hospital</span> - <span className={styles.role}>Administrator.</span><span className={styles.date6}>2015 - 2017</span></h3>
         <ul>
           <li className={styles.list}>Providing strategic and lucrative ideas to maintain and repair the physical facility and represent the
           hospital at investors meeting.</li>

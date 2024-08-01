@@ -11,11 +11,11 @@ export const SidebarData = [
         path: '/about',
         
     },
-    {
-        title: "My Skills",
-        path: "/skills",
+    // {
+    //     title: "My Skills",
+    //     path: "/skills",
         
-    },
+    // },
     {
         title: "Projects",
         path: "/projects",

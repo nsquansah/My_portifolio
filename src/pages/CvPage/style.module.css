@@ -13,7 +13,7 @@
     justify-content: left;
     height: 400vh;
     background-color: rgba(245,244,252,255);
-    width: 75%;
+    width: 85%;
     margin-left: 15rem;
     padding: 5rem;
 
@@ -117,34 +117,40 @@ word-spacing: 5px;
  }
 
  .date1{
-    margin-left: 10rem;
-    font-size: 1.2rem;
+    /* margin-left: 1rem; */
+    align-items: flex-start;
+  
  }
 
  .date2{
-    margin-left: 11rem;
+    /* margin-left: 11rem; */
     font-size: 1.2rem;
+    align-items: flex-start;
  }
 
  .date3{
-    margin-left: 15rem;
+    /* margin-left: 15rem; */
     font-size: 1.2rem;
+    align-items: flex-start;
  }
 
     .date4{
-        margin-left: 12rem;
+        /* margin-left: 12rem; */
         font-size: 1.2rem;
+        align-items: flex-start;
     }
 
     .date5{
-        margin-left: 3rem;
+        /* margin-left: 3rem; */
         font-size: 1.2rem;
+        align-items: flex-start;
     }
 
 
     .date6{
-        margin-left: 10rem;
+        /* margin-left: 10rem; */
         font-size: 1.2rem;
+        align-items: flex-start;
     }
 
     .leftpart{
@@ -152,6 +158,11 @@ word-spacing: 5px;
         flex-direction: column;
         margin-top: 2rem;
         
+    }
+
+    .role{
+        display: flex;
+        padding: 10px 0 10px 0;  
     }
 
     .rightpart{
@@ -219,6 +230,18 @@ word-spacing: 5px;
       width: 100%;
       margin-left: 0;
       height: auto;
+    }
+
+    .download{
+        margin-top: 10%;
+    }
+
+    .downloadicon{
+        /* margin-top: 0.5rem; */
+        margin-left: 0.5em;
+        width: 5%;
+        height: 1rem;
+
     }
   
     .title {
@@ -289,9 +312,21 @@ word-spacing: 5px;
       align-items: flex-start;
       justify-content: flex-start;
       padding: 2rem;
-      width: 100%;
-      margin-left: 0;
+      width: 61%;
+      margin-left: 15rem;
       height: auto;
+    }
+
+    .download{
+        margin-top: 10%;
+    }
+
+    .downloadicon{
+        /* margin-top: 0.5rem; */
+        margin-left: 0.5em;
+        width: 5%;
+        height: 1rem;
+
     }
   
     .title {
@@ -302,6 +337,7 @@ word-spacing: 5px;
       font-size: 1.5rem;
       width: 100%;
     }
+    
   
     .subtitle2 {
       font-size: 1.1rem;
@@ -363,7 +399,7 @@ word-spacing: 5px;
       justify-content: flex-start;
       padding: 3rem;
       width: 100%;
-      margin-left: 5rem;
+      margin-left: 15rem;
       height: auto;
     }
   
@@ -403,6 +439,14 @@ word-spacing: 5px;
     .rightpart {
       width: 100%;
       margin-top: 2rem;
+    }
+
+    .downloadicon{
+        /* margin-top: 0.5rem; */
+        margin-left: 0.5em;
+        width: 5%;
+        height: 1rem;
+
     }
   
     .skills,
