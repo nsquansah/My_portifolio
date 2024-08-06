@@ -14,6 +14,7 @@ import Gallery from './pages/Gallery/index.jsx';
 import Projects from './pages/Projects/index.jsx';
 
 
+
 function App() {
   const [trail, setTrail] = useState([]);
   const [mouseIdle, setMouseIdle] = useState(false);
@@ -52,6 +53,7 @@ function App() {
     <Router>
       <div className='App'>
         <Sidebar />
+        
         {trail.map((pos, index) => (
           <Mousetrail key={index} x={pos.x} y={pos.y} />
         ))}
