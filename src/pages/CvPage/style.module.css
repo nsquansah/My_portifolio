@@ -232,15 +232,9 @@ word-spacing: 5px;
       margin-left: 0;
       height: auto;
     }
-
-    .download{
-        margin-top: 10%;
-    }
-
-    .leftpart{
-        width: 30%;
-    }
 }
+
+
 @media (max-width: 600px) {
     .CvPage {
       flex-direction: column;

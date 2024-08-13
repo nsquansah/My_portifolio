@@ -1,6 +1,6 @@
 import image from '../../assets/images/github.svg';
 
-export const CardsData = [
+const CardsData = [
   {
     title: "Card Title 1",
     content: "This is some content for the first card.",
