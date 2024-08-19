@@ -12,7 +12,8 @@ import Contacts from './pages/Contact/index.jsx';
 import MySkills from './pages/MySkill/index.jsx';
 import Gallery from './pages/Gallery/index.jsx';
 import Projects from './pages/Projects/index.jsx';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
