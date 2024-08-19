@@ -137,10 +137,12 @@ export const CvPage = () => {
         <hr className={styles.line3}/>
         <li className={styles.skill}>HTML</li>
         <li className={styles.skill}>CSS</li>
+        <li className={styles.skill}> tailwind Css</li>
         <li className={styles.skill}>JavaScript</li>
         <li className={styles.skill}>React</li>
         <li className={styles.skill}>Node.js</li>
         <li className={styles.skill}>Typescript</li>
+        <li className={styles.skill}>Next.js</li>
         {/* <li className={styles.skill}>MongoDB</li> */}
         <li className={styles.skill}>Git</li>
         <li className={styles.skill}>GitHub</li>
